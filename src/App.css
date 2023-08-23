@@ -1,0 +1,90 @@
+body{
+  
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  height: 5rem;
+  margin-top: 5rem;
+  width: 80vh;
+  min-width: 5vh;
+  
+  flex-wrap: wrap;
+  
+}
+.search{
+  display: flex;
+  align-content: center;
+  height: 100%;
+  margin-left: auto;
+}
+.logo{
+  height: 5rem;
+  flex: 1;
+  min-width: calc(33.33% - 20px);
+}
+
+
+
+.searchbutton:hover{
+  border-color: white;
+  background-color: black;
+}
+
+.inputs{
+  border-radius: 25px;
+  background-color: lightgray;
+  color: black;
+  font-size: 1.5rem;
+  
+  
+}
+.pokebola{
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pokebola::before{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 50%;
+}
+.pokebola::after{
+
+  content: "";
+  position: absolute;
+  
+  top: calc(50% );
+  width: 100%;
+  height: 50%;
+  background: white;
+  border-top: 5px solid;
+
+}
+.searchbutton{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  top:calc(50% - 15px - 0px);
+  left: calc(50% - 15px - 0px);
+  z-index: 10;
+  background: white;
+}
+
+.descriptionContainer{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline
+}

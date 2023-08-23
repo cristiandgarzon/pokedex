@@ -1,0 +1,12 @@
+#cardcontainer{
+
+    border-radius: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.pokename{
+    align-self: center;
+}
